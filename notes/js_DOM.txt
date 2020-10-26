@@ -1,0 +1,45 @@
+1，事件监听和移除
+addEventListener()方法：用于向指定元素添加事件。
+    添加的事件不会覆盖已存在的事件。
+    语法：element.addEventListener(event, function, useCapture);
+        第一个参数是事件的类型 (如 "click" 或 "mousedown").
+        第二个参数是事件触发后调用的函数。
+        第三个参数是个布尔值用于描述事件是冒泡还是捕获。该参数是可选的。
+        // 不用使用on前缀
+removeEventListener()方法：移除时间的监听。
+
+2，事件冒泡和事件捕获
+addEventListener(event, function, useCapture);
+    useCapture默认为false，当值为true时捕获传递。
+    冒泡（默认）：内部元素会先被触发，然后触发外部元素。
+    捕获：外部元素会先被触发，然后才会触发内部元素的事件。
+
+3，DOM查找HTML元素的方式
+    Id查找：document.getElementById();
+    标签查找：document.getElementByTagName();
+    类名查找：document.getElementByClassName();
+
+4，创建新的HTML元素(节点)
+    element.appendChild(para);
+        //添加新元素para到element元素尾部
+    element.insertBefore(para,child);
+        //添加新元素para到element元素中的child元素前面
+移除已存在节点
+    parent.removeChild(child);
+        //移除父级元素parent的子元素child
+替换HTML元素节点
+    parent.replaceChild(para,child);
+        //para替换父级元素parent的子元素child
+
+5,DOM改变HTML输入
+document.write()
+    //直接向HTML输出流写内容
+innerHTML属性：修改HTML内容
+    //document.getElementById("txt").innnerHTML="new txt!";
+
+6,DOM集合——Collection
+getElementByTagName()方法返回HTML Collection对象。
+    length属性返回集合长度。
+    HTML Collection不是一个数组！
+
+
