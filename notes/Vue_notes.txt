@@ -1,0 +1,62 @@
+1,Vue实例的创建：
+    var vm=new vue({
+        //选项
+        el:     //DOM元素选择器。
+        data:{
+            //用于定义属性
+        },
+        methods:{
+            //用于定义函数，可以通过return来返回函数值
+        }
+    })
+当一个Vue实例被创建时，他向Vue的响应系统中加入了其data对象中能找到的所有的属性。这些属性的值发生改变也会引起html视图的相应改变。
+{{ }}用于输出对象属性和函数返回值。
+Vue实例提供的属性和方法都有前缀$,方便和用户定义的属性区分。
+
+2，Vue.js模板语法
+插值（数据绑定）
+    文本插值：双大括号{{···}}
+    HTML插入：使用指令v-html
+    属性绑定：v-bind指令        //v-bind:attribute="value"
+    表达式：对于所有的数据绑定，Vue.js提供完全的JavaScript表达式支持
+指令
+    指令：是指带有v-前缀的特殊属性，用于在表达式值改变时，将DOM行为应用到HTML页面。
+    指令参数：在冒号后指明
+    指令修饰符：以半角句号 . 指明的特殊参数后缀，用于指出一个指令应该以特殊方式绑定
+用户输入
+    表单输入：v-model指令来在 input、select、textarea、checkbox、radio 等表单控件元素上创建双向数据绑定，根据表单上的值，自动更新绑定的元素的值。
+    按钮事件：v-on指令进行事件监听和响应
+过滤器
+
+缩写
+    v-bind缩写：
+        <!-- 完整语法 -->
+        <a v-bind:href="url"></a>
+        <!-- 缩写 -->
+        <a :href="url"></a>
+    v-on缩写：
+        <!-- 完整语法 -->
+        <a v-on:click="doSomething"></a>
+        <!-- 缩写 -->
+        <a @click="doSomething"></a>
+3，Vue.js条件与循环
+条件判断
+    v-if指令：根据表达式的值(true 或 false )来决定是否执行代码块
+    v-else指令：给v-if指令添加"else"块
+    v-else-if指令：用作v-if的else-if块
+    v-else 、v-else-if 必须跟在 v-if 或者 v-else-if之后。
+
+    v-show指令指令：根据条件展示元素。
+循环语句
+    v-for指令需要以site in sites形式的特殊语法，sites 是源数据数组并且 site 是数组元素迭代的别名。
+        1，绑定数据到数组来渲染列表
+        2，模板template中使用
+        3，迭代对象：通过一个对象的属性来迭代数据（ 可以设置键值和索引）
+        4，迭代整数实现循环递增
+
+4，Vue.js计算属性
+
+
+
+
+    
