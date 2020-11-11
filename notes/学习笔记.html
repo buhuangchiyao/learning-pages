@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css3学习笔记</title>
+        <style>
+            body{
+                background-color: chartreuse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">css3学习笔记</h1>
+        <h2>css模型概述</h2>
+        <center><img src="boxmodel.gif"></center>
+        <h2>属性介绍</h2>
+        <h3>边框属性</h3>
+        <ol>
+            <li>border-color（颜色）</li>
+            <ul>
+                <li>颜色名</li>
+                <li>rgb</li>
+                <li>十进制码</li>
+            </ul>
+            <li>border-width（宽度）</li>
+            <ul>
+                <li>像素数</li>
+                <li>关键字：thin,medium,thick</li>
+            </ul>
+            <li>border-style（样式）</li>
+            <ul>
+                <li>soild:实线/dotted:虚线</li>
+                <li>double:双线/dashed：破折线</li>
+                <li>groove：槽线/ridge：脊线</li>
+                <li>inset:内凹/outset:外凸</li>
+            </ul>
+            <li>指定某一边的边框属性</li>
+            <ul>
+                <li>四个边表示（上下左右）：top,bottom,left,right;</li>
+                <li>单独制定某一边颜色，宽度，样式：border-top-color;</li>
+            </ul>
+            <li>指定边框圆角</li>
+            <ul>
+                boder-radius:*px;     //为边框设计圆角
+            </ul>
+        </ol>
+        <h3>内边距属性（和定义顺序有关）</h3>
+        <ol>
+            <li>padding</li>
+            <li>padding-left:左边增加内边距</li>
+        </ol>
+        <h3>外边距属性（和定义顺序有关）</h3>
+        <ol>
+            <li>margin</li>
+            <li>margin-right:右外边距</li>
+        </ol>
+        <h3>其他属性</h3>
+        <ol>
+            <li>background-color</li>
+            <li>
+                background-image
+                <h4>背景图像属性</h4>
+                <ul>
+                    <li>background-image用法：background-image:url(*****.gif)</li>
+                    <li>background-repeat:图像显示方式</li>
+                    <ul>
+                        <li>no-repeat:显示一次不重复</li>
+                        <li>repeat-x:水平方向重复</li>
+                        <li>repear-y:垂直方向重复</li>
+                        <li>inherit:按父元素设置处理</li>
+                    </ul>
+                    <li>background-positon:图像显示位置</li>   
+                    <ul>
+                        <li>top/left/right</li>
+                    </ul>  
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>
