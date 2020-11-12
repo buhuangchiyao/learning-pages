@@ -25,7 +25,7 @@ function img(curIndex){//切换图片
     }
   }
   index=curIndex;
-  pics.style.marginTop=-330*curIndex+'px';//图片上移
+  pics.style.marginTop=-505*curIndex+'px';//图片上移
   wrap.onmouseover=function(){//鼠标放到图片上时图片停止播放
     pics.style.cursor="pointer";
     clearInterval(counter);//清除计时器
