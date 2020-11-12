@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+#wrap{
+    margin:50px auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#list{
+    position:absolute;
+    bottom: 12px;
+    right: 330px;
+}
+#list li{
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    background: #ada79d;
+    color:#fff;
+    border-radius: 50%;
+}
+#list .on{
+    background: red;
+}
+#bar_left,#bar_right{
+    width: 33px;
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    top:160px;
+    background: #000000;
+}
+#bar_left{
+    left:-33px;
+}
+#bar_right{
+    right: -33px;
+}
+
+#bar_left:after,#bar_left:before,#bar_right::before,#bar_right:after{
+    content:"";
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 25px;
+}
+/*左边箭头*/
+#bar_left:before{
+    border-left: 15px solid transparent;
+    border-right: 15px solid #FFF;
+    right: 10px;
+}
+#bar_left:after{
+    border-left: 15px solid transparent;
+    border-right: 15px solid rgba(0, 0, 0, 0.3);
+    right: 7px;
+}
+/*右边箭头*/
+#bar_right:before{
+    border-right: 15px solid transparent;
+    border-left: 15px solid #FFF;
+    left: 10px;
+}
+#bar_right:after{
+    border-right: 15px solid transparent;
+    border-left: 15px solid rgba(0, 0, 0, 0.3);
+    left: 7px;
+}
+#wrap:hover #bar_left{
+    left:0px;
+    cursor: pointer;
+    transition: left 0.5s;
+}
+#wrap:hover #bar_right{
+    right: 0px;
+    cursor: pointer;
+    transition: right 0.5s;
+}
