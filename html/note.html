@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buhuangchiyao</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/note.css">
+    <style>
+         *{margin:0;padding:0;}
+        p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{margin:0px;padding:0px;}
+    </style>
+</head>
+<body>
+    <!-- Start header -->
+    <div class="header">
+       <div class="top">
+           <div class="top_left">
+               <a href="#">wanwu.com</a>
+           </div>
+           <div class="top_search">
+                <form action="http://www.baidu.com">
+                    <input type="text" placeholder="去百度搜索" id="search">
+                </form>                 
+            </div>
+       </div>
+    </div>
+    <!-- Start logo -->
+    <div class="logo">
+        <img src="../image/logo2.png" alt="">
+    </div>
+    <!-- note Start -->
+    <div class="note">
+        <div id="note">
+            <h2 style="text-align: center;">JS_DOM</h2>
+            <p>
+                1，事件监听和移除<br>
+                addEventListener()方法：用于向指定元素添加事件。<br>
+                    添加的事件不会覆盖已存在的事件。<br>
+                    语法：element.addEventListener(event, function, useCapture);<br>
+                        第一个参数是事件的类型 (如 "click" 或 "mousedown").<br>
+                        第二个参数是事件触发后调用的函数。<br>
+                        第三个参数是个布尔值用于描述事件是冒泡还是捕获。该参数是可选的。 <br> 
+                        // 不用使用on前缀<br>
+                removeEventListener()方法：移除时间的监听。<br>
+                <br>
+                2，事件冒泡和事件捕获<br>
+                addEventListener(event, function, useCapture);<br>
+                    useCapture默认为false，当值为true时捕获传递。<br>
+                    冒泡（默认）：内部元素会先被触发，然后触发外部元素。<br>
+                    捕获：外部元素会先被触发，然后才会触发内部元素的事件。<br>
+                    <br>
+                3，DOM查找HTML元素的方式<br>
+                    Id查找：document.getElementById();<br>
+                    标签查找：document.getElementByTagName();<br>
+                    类名查找：document.getElementByClassName();<br><br>
+                4，创建新的HTML元素(节点)<br>
+                    element.appendChild(para);
+                        //添加新元素para到element元素尾部<br>
+                    element.insertBefore(para,child);<br>
+                        //添加新元素para到element元素中的child元素前面<br>
+                移除已存在节点<br>
+                    parent.removeChild(child);<br>
+                        //移除父级元素parent的子元素child<br>
+                替换HTML元素节点<br>
+                    parent.replaceChild(para,child);<br>
+                        //para替换父级元素parent的子元素child<br><br>
+                5,DOM改变HTML输入<br>
+                document.write()<br>
+                    //直接向HTML输出流写内容<br>
+                innerHTML属性：修改HTML内容<br>
+                    //document.getElementById("txt").innnerHTML="new txt!";<br><br>
+                6,DOM集合——Collection<br>
+                getElementByTagName()方法返回HTML Collection对象。<br>
+                    length属性返回集合长度。<br>
+                    HTML Collection不是一个数组！<br><br>                 
+            </p>
+        </div>
+    </div>
+    <!-- Start bottom  -->
+    <div class="bottom">
+        <div class="botBox">
+            <div class="firstlist">
+                <li><a href="#">我的笔记</a></li>
+                <li><a href="#">html笔记</a></li>
+                <li><a href="#">css笔记</a></li>
+                <li><a href="#">javascript笔记</a></li>
+            </div>
+            <div class="secondlist">
+                <li><a href="#">我的dome</a></li>
+                <li><a href="./html/demo1_GouWuChe.html">购物车</a></li>
+                <li><a href="./html/demo2_LunBoTu.html">轮播图</a></li>
+                <li><a href="#">实例</a></li>
+            </div>
+            <div class="about1">
+                <div class="img">
+                    <img src="../image/mail.png" alt="">
+                </div>
+                <p>电子邮件咨询</p>
+                <p>
+                    <a href="#">yhlrn@outlook.com</a>
+                </p>
+            </div>
+            <div class="about2">
+                <div class="qrcode">
+                    <img src="../image/qrcode.png" alt="">
+                </div>
+                <p>关注微信</p>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © 2020-2020 万物博客  wanwu.com All Rights Reserved. 
+        </p>
+    </div>
+</body>
+</html>

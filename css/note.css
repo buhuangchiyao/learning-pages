@@ -1,0 +1,11 @@
+.note{
+    background-color: #d0ddc7;
+}
+#note{
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #eeeeee;
+    border: solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
+}
